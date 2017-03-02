@@ -1,0 +1,255 @@
+ul,
+li,
+body {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+.top {
+  width: 100%;
+  height: 60px;
+  background-color: #c9c9c9;
+  position: fixed;
+  margin-bottom: 60px;
+  font-size: 14px;
+  z-index: 9999;
+}
+.top .portrait {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  float: left;
+  margin-left: 30px;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.top .portrait:hover .portraitimg {
+  transition: all 0.2s;
+  z-index: -1;
+}
+.top .portrait .portraitimg {
+  position: absolute;
+  z-index: 5;
+}
+.top .portrait .portraithover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+.top .portrait img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.top .sub-titile {
+  float: right;
+}
+.top .sub-titile li {
+  float: left;
+  line-height: 60px;
+}
+.top .sub-titile li:last-child {
+  margin-right: 30px;
+}
+.top .sub-titile .line {
+  width: 2px;
+  float: left;
+  height: 20px;
+  background-color: #000;
+  margin: 20px 20px 0 20px;
+}
+#container {
+  position: relative;
+  height: 100%;
+  margin-top: 60px;
+}
+section {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+section .titile {
+  color: #000;
+  font-size: 24px;
+  text-align: center;
+}
+.container-box {
+  text-align: center;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+}
+.introduce .container-box .selfimg {
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: all 0.7s ease-in-out;
+  margin: 0% auto 0;
+}
+.introduce .container-box .selfimg:hover {
+  transform: rotateY(-180deg);
+}
+.introduce .container-box .selfimg img {
+  width: 110px;
+  display: block;
+}
+.introduce .container-box .slogan {
+  margin: 20px 0 20px 0 ;
+  font-weight: bold;
+  position: relative;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+.introduce .container-box .slogan:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: -85px;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+}
+.introduce .container-box .slogan:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 18px;
+  right: -85px;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+}
+.introduce .container-box .name,
+.introduce .container-box .target,
+.introduce .container-box .address,
+.introduce .container-box .tel,
+.introduce .container-box .email {
+  margin: 20px 0 20px 0 ;
+  font-size: 14px;
+}
+.aboutme .basic-information {
+  margin-top: 100px;
+}
+.aboutme .basic-information .education .fa-graduation-cap:before {
+  content: "\f19d";
+}
+.aboutme .basic-information .age .fa-child:before {
+  content: "\f1ae";
+}
+.aboutme .basic-information .address .fa-street-view:before {
+  content: "\f21d";
+}
+.aboutme .basic-information .situation .fa-tags:before {
+  content: "\f02c";
+}
+.aboutme .basic-information li {
+  display: inline-block;
+  margin: 0 50px;
+}
+.aboutme .basic-information i {
+  display: block;
+  font-size: 50px;
+}
+.aboutme .basic-information span {
+  margin-top: 35px;
+  display: block;
+  line-height: 38px;
+}
+.aboutme .introduce-self {
+  width: 630px;
+  margin: 60px auto 0;
+}
+.skills .container {
+  width: 980px;
+  margin: 0 auto;
+}
+.skills .left-figure {
+  display: inline-block;
+  vertical-align: top;
+}
+.skills .left-figure ul {
+  width: 500px;
+}
+.skills .left-figure ul li {
+  float: left;
+}
+.skills .left-figure ul li p {
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+}
+.skills .left-figure ul li span {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 10px;
+  height: 24px;
+}
+.skills .left-figure ul .html5 span {
+  width: 300px;
+  background-color: #63acff;
+}
+.skills .left-figure ul .css3 span {
+  width: 300px;
+  background-color: #63caff;
+}
+.skills .left-figure ul .js span {
+  width: 200px;
+  background-color: #63e7ff;
+}
+.skills .left-figure ul .jquery span {
+  width: 250px;
+  background-color: #00919e;
+}
+.skills .left-figure ul .bootstrap span {
+  width: 250px;
+  background-color: #30ffee;
+}
+.skills .left-figure ul .react span {
+  width: 100px;
+  background-color: #00b76c;
+}
+.skills .left-figure ul .ps span {
+  width: 300px;
+  background-color: #c1ff7f;
+}
+.skills .right-text {
+  display: inline-block;
+  width: 450px;
+  vertical-align: top;
+  text-align: left;
+}
+.skills .line {
+  display: inline-block;
+  vertical-align: top;
+  width: 1px;
+  height: 372px;
+  background-color: #000;
+  margin-right: 55px;
+}
+.pagination-link {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background-color: #fff;
+  margin: 10px 0;
+}
+.active {
+  background-color: #000;
+}
+#fsvs-pagination {
+  position: absolute;
+  top: 50%;
+}
